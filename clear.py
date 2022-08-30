@@ -5,3 +5,4 @@ def cls():
 def cl():
     os.system('cls')
 
+cls()
