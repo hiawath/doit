@@ -1,4 +1,4 @@
-vowels=['a','e','i','o','u']
+vowels=['a','e','i','o','u','1']
 words = '''The Zen of Python, by Tim Peters
     Beautiful is better than ugly.
     Explicit is better than implicit.
@@ -21,12 +21,18 @@ words = '''The Zen of Python, by Tim Peters
     Namespaces are one honking great idea -- let's do more of those!"
 '''
 
-found={'a':0,'e':0 ,'i':0,'o':0,'u':0}
+#found={'a':0,'e':0 ,'i':0,'o':0,'u':0,'1':0}
+found={}
+
 
 for letter in words:
     if letter in vowels:
+        found.setdefault(letter,0)
         found[letter] +=1
 
-for k,v in found.items():
+for k,v in sorted(found.items()):
     print(k, ' : ', v)
+    
+
+    
         
