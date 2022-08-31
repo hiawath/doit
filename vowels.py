@@ -25,7 +25,7 @@ words=words.lower()
 found={}
 
 
-def printVowels():
+def printV3():
     for letter in words:
         if letter in vowels:
             found.setdefault(letter,0)
@@ -34,6 +34,7 @@ def printVowels():
     for k,v in sorted(found.items()):
         print(k, ' : ', v)
     
-
+def Test():
+    pass
     
         
